@@ -30,8 +30,5 @@
   "peerDependencies": {
     "react-native": ">=0.60"
   },
-  "types": "./index.d.ts",
-  "dependencies": {
-    "react-native": "^0.64.0"
-  }
+  "types": "./index.d.ts"
 }

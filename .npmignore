@@ -3,6 +3,7 @@ __tests__/
 .vscode/
 yarn.lock
 Sample/
+docs/
 android/build/
 android/.idea/
 android/.gradle/

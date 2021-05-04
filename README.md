@@ -20,6 +20,14 @@ They deprecated and REMOVED the API for accessing local notifications from withi
 - iOS >= 9.0
 - Android >= 21.0
 
+## Roadmap
+
+- [x] Local notifications API
+- [ ] Update the docs
+- [ ] Remove remnants of react-native-firebase 
+- [ ] Fix index.d.ts
+- [ ] Scheduled notifications
+
 ## Install
 
 Install dependency package
@@ -33,21 +41,11 @@ npm i -S react-native-notifree
 
 If you are using `React Native 0.60.+` go to the folder **your-project/ios** and run `pod install`, and you're done. 
 
-## Usage
+## Usage and Documentation
 
 *In progress..*
 
-## API
-
-*In progress..*
-
-## To-do
-
-- [x] Local notifications
-- [ ] Update the docs
-- [ ] Remove remnants of react-native-firebase 
-- [ ] Fix index.d.ts
-- [ ] Scheduled notifications
+See the [documentation](https://github.com/douglasjunior/react-native-notifree/tree/master/docs) folder. 
 
 ## Contribute
 

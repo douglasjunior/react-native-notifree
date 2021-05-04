@@ -1,0 +1,37 @@
+{
+  "name": "react-native-notifree",
+  "displayName": "React-Native Notifree",
+  "version": "0.0.1",
+  "description": "⚛ React Native library to display local notifications",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/douglasjunior/react-native-notifree.git"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "ios",
+    "notification",
+    "local-notification",
+    "push-notification"
+  ],
+  "author": {
+    "name": "Douglas Nassif Roma Junior",
+    "email": "nassifrroma@gmail.com",
+    "url": "http://douglasjunior.me"
+  },
+  "bugs": {
+    "url": "https://github.com/douglasjunior/react-native-notifree/issues"
+  },
+  "homepage": "https://github.com/douglasjunior/react-native-notifree",
+  "peerDependencies": {
+    "react-native": ">=0.60"
+  },
+  "types": "./index.d.ts",
+  "dependencies": {
+    "react-native": "^0.64.0"
+  }
+}

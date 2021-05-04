@@ -1,0 +1,53 @@
+buildscript {
+    ext.safeExtGet = {prop, fallback ->
+        rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+    }
+
+    // The Android Gradle plugin is only required when opening the android folder stand-alone.
+    // This avoids unnecessary downloads and potential conflicts when the library is included as a
+    // module dependency in an application project.
+    if (project == rootProject) {
+        repositories {
+            google()
+            jcenter()
+        }
+
+        dependencies {
+            //noinspection GradleDependency
+            classpath("com.android.tools.build:gradle:4.1.0")
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion safeExtGet('compileSdkVersion', 29)
+    //noinspection GradleDependency
+    buildToolsVersion safeExtGet('buildToolsVersion', '29.0.3')
+
+    defaultConfig {
+        minSdkVersion safeExtGet('minSdkVersion', 21)
+        //noinspection OldTargetApi
+        targetSdkVersion safeExtGet('targetSdkVersion', 29)
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenLocal()
+    google()
+    jcenter()
+    maven {
+        // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+        url "$rootDir/../node_modules/react-native/android"
+    }
+}
+
+dependencies {
+    //noinspection GradleDynamicVersion
+    implementation "com.facebook.react:react-native:${safeExtGet('reactnativeVersion', '+')}"
+    implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
+}

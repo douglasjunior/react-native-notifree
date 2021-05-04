@@ -1,0 +1,60 @@
+buildscript {
+    ext {
+        buildToolsVersion = "28.0.3"
+        compileSdkVersion = 28
+    }
+
+  repositories {
+    google()
+    maven {
+      url 'https://maven.fabric.io/public'
+    }
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.4.1'
+    classpath 'com.google.gms:google-services:4.2.0'
+    classpath 'com.google.firebase:perf-plugin:1.2.1'
+    classpath 'io.fabric.tools:gradle:1.25.4'
+  }
+}
+
+allprojects {
+  task downloadDependencies() {
+    description 'Download all dependencies to the Gradle cache'
+    doLast {
+      configurations.findAll().each { config ->
+        if (config.name.contains("minReactNative") && config.canBeResolved) {
+          print config.name
+          print '\n'
+          config.files
+        }
+      }
+    }
+  }
+
+  repositories {
+    mavenLocal()
+    google()
+    maven {
+      url "$rootDir/../node_modules/react-native/android"
+    }
+    maven {
+      url 'https://maven.google.com/'
+      name 'Google'
+    }
+    jcenter()
+  }
+}
+
+ext {
+  buildToolsVersion = "28.0.3"
+  minSdkVersion = 18
+  compileSdkVersion = 28
+  targetSdkVersion = 27
+  supportLibVersion = "28.0.0"
+}
+
+subprojects {
+  task listAllDependencies(type: DependencyReportTask) {}
+}

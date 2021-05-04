@@ -46,6 +46,7 @@ If you are using `React Native 0.60.+` go to the folder **your-project/ios** and
 [x] Local notifications
 [ ] Update the docs
 [ ] Remove remnants of react-native-firebase 
+[ ] Fix index.d.ts
 [ ] Scheduled notifications
 
 ## Contribute

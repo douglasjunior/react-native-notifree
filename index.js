@@ -1,7 +1,7 @@
-import firebase from './modules/core/firebase';
+import firebase from './src/modules/core/firebase';
 
 firebase.initializeApp({});
 
-const notifree = messaging();
+const notifree = firebase.notifications;
 
 export default notifree;

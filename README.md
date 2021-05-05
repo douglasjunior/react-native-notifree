@@ -1,10 +1,10 @@
-# React-Native Notifree
+# React-Native NotiFREE
 
 [![Licence MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/douglasjunior/react-native-notifree/blob/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/react-native-notifree.svg)](https://www.npmjs.com/package/react-native-notifree)
 [![npm downloads](https://img.shields.io/npm/dt/react-native-notifree.svg)](#install-with-react-native-link)
 
-⚛ React Native library to display local notifications. A free alternative to [react-native-notifee](https://github.com/notifee/react-native-notifee).
+⚛ React Native library to display local notifications. A FREE alternative to [React Native NotiFEE](https://github.com/notifee/react-native-notifee).
 
 ## Why?
 
@@ -12,7 +12,7 @@ Nobody can remove the gratitude that the **React Native community** has towards 
 
 They deprecated and **REMOVED** the API to accessing local notifications from within **React Native Firebase 6**, and created a closed library called **Notifee**, forcing all projects that depends on **React Native Firebase** to purchase a **Notifee** license. For me, this is a lack of fair play. 
 
-**React Native Notifree** recovers the Local Notification API from [React Native Firebase 5](https://github.com/douglasjunior/react-native-notifree/tree/react-native-firebase-5), allowing projects that use React Native Firebase to keep working without purchase extra licenses. 
+**React Native NotiFREE** recovers the Local Notification API from [React Native Firebase 5](https://github.com/douglasjunior/react-native-notifree/tree/react-native-firebase-5), allowing projects that use React Native Firebase to keep working without purchase extra licenses. 
 
 ## Requirements
 

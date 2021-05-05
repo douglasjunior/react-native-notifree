@@ -20,11 +20,6 @@ static NSString *const DEFAULT_APP_NAME = @"__FIRAPP_DEFAULT";
   return [iso8601String stringByAppendingString:@"Z"];
 }
 
-+ (FIRApp *)getApp:(NSString *)appDisplayName {
-  NSString *appName = [RNFirebaseUtil getAppName:appDisplayName];
-  return [FIRApp appNamed:appName];
-}
-
 + (NSString *)getAppName:(NSString *)appDisplayName {
   if ([appDisplayName isEqualToString:DEFAULT_APP_DISPLAY_NAME]) {
     return DEFAULT_APP_NAME;
@@ -49,14 +44,6 @@ static NSString *const DEFAULT_APP_NAME = @"__FIRAPP_DEFAULT";
   } @catch (NSException *error) {
     DLog(@"An error occurred in sendJSEvent: %@", [error debugDescription]);
   }
-}
-
-+ (void)sendJSEventWithAppName:(RCTEventEmitter *)emitter app:(FIRApp *)app name:(NSString *)name body:(id)body {
-  // Add the appName to the body
-  NSMutableDictionary *newBody = [body mutableCopy];
-  newBody[@"appName"] = [RNFirebaseUtil getAppDisplayName:app.name];
-
-  [RNFirebaseUtil sendJSEvent:emitter name:name body:newBody];
 }
 
 @end

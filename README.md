@@ -10,7 +10,7 @@
 
 Nobody can remove the gratitude that the **React Native community** has towards [Invertase](https://github.com/invertase), for creating and maintaining, for so many years, the [React Native Firebase](https://github.com/invertase/react-native-firebase) library. BUT, in my opinion, that does not give them the right to do what they did.
 
-They deprecated and **REMOVED** the API to accessing local notifications from within **React Native Firebase 6**, and created a closed library called **Notifee**, forcing all projects that depends on **React Native Firebase** to purchase a **Notifee** license. For me, this is a lack of fair play. 
+[They deprecated and **REMOVED** the API to accessing local notifications from within **React Native Firebase 6**](https://rnfirebase.io/migrating-to-v6#notifications), and created a closed library called **Notifee**, forcing all projects that depends on **React Native Firebase** to purchase a **Notifee** license. For me, this is a lack of fair play. 
 
 **React Native NotiFREE** recovers the Local Notification API from [React Native Firebase 5](https://github.com/douglasjunior/react-native-notifree/tree/react-native-firebase-5), allowing projects that use React Native Firebase to keep working without purchase extra licenses. 
 

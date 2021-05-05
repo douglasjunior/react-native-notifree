@@ -2,7 +2,7 @@
 
 [![Licence MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/douglasjunior/react-native-notifree/blob/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/react-native-notifree.svg)](https://www.npmjs.com/package/react-native-notifree)
-[![npm downloads](https://img.shields.io/npm/dt/react-native-notifree.svg)](#install-with-react-native-link)
+[![npm downloads](https://img.shields.io/npm/dt/react-native-notifree.svg)](#install)
 
 ⚛ React Native library to display local notifications. A FREE alternative to [React Native NotiFEE](https://github.com/notifee/react-native-notifee).
 

@@ -1,3 +1,5 @@
+# NOT IMPLEMENTED YET ON REACT-NATIVE NOTIFREE
+
 # Scheduling Notifications
 
 Both Android and iOS allow notifications to be scheduled to display at some point in the future.

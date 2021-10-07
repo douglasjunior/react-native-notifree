@@ -1,7 +1,7 @@
 {
   "name": "react-native-notifree",
-  "displayName": "React-Native Notifree",
-  "version": "1.0.0",
+  "displayName": "*DEPRECATED* React-Native Notifree",
+  "version": "1.0.1",
   "description": "⚛ React Native library to display local notifications",
   "main": "index.js",
   "license": "MIT",

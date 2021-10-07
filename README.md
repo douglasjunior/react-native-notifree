@@ -1,3 +1,8 @@
+# DEPRECATED
+
+Now [React Native Notifee](https://github.com/invertase/notifee) is fully free and opensource! 🎉
+
+
 # React-Native NotiFREE
 
 [![Licence MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/douglasjunior/react-native-notifree/blob/master/LICENSE)
